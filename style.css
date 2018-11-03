@@ -1,12 +1,11 @@
-.header-class{
-	background-image: url(header.jpg);
-	background-size: cover;
-	width: 100%;
-	height: 350px;
+.header-class {
+    background-image: url(header.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 350px;
 }
 
-.youtube-videos{
-	width: 100%;
-	height: 100px;
+.youtube-videos {
+    width: 100%;
+    height: 100px;
 }
-
