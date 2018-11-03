@@ -1,4 +1,4 @@
-//$("#carouselvideo").carousel({ interval: false });
+$("#carouselvideo").carousel({ interval: false });
 
 $(document).ready(function() {
     console.log("ready!");
@@ -79,7 +79,7 @@ function loadtweets() {
 
         $.each(payload.statuses, function(index, item) {
 
-            $("#twitter_container").append('<p>' + item.text + '</p>');
+            $("#twitter_container").append('<p><i class="fas fa-arrow-alt-circle-right"></i> ' + item.text + '</p>');
 
         });
 
