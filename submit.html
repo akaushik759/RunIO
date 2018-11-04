@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +12,7 @@
 
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.4.2/css/all.css' integrity='sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns' crossorigin='anonymous'>
 
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Poiret+One" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Poiret+One" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
@@ -23,9 +24,10 @@
 
     <title>Submit</title>
 </head>
+
 <body>
-	<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-        <a class="navbar-brand" href="#"style="color: black;"><strong>Project</strong></a>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+        <a class="navbar-brand" href="#" style="color: black;"><strong>Project</strong></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -35,39 +37,39 @@
                     <a class="nav-link" href="home.html" style="color: black;">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="submit.html"style="color: black;">Contribute</a>
+                    <a class="nav-link" href="submit.html" style="color: black;">Contribute</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-<div class="container" style="padding-top: 100px;padding-bottom:50px;">
-	<form>
-	<div class="form-group">
-    	<label>Name</label>
-    	<input type="" class="form-control" id="exampleInputPassword1" placeholder="Enter your Name">
-  	</div>
-  	<div class="form-group">
-    	<label for="exampleInputEmail1">Email address</label>
-    	<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    	<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  	</div>
-    <div class="form-group">
-    <label>Article Topic</label>
-    <input type="" class="form-control" id="exampleInputPassword1" placeholder="Enter the topic of your article">
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlTextarea1">Enter your content</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
-    <div class="form-group">
-    <label for="exampleFormControlFile1">Upload any supporting file</label>
-    <input type="file" class="form-control-file" id="exampleFormControlFile1">
-  </div>
-  <div class="text-center">
-  <button type="submit" class="btn btn-primary">Submit</button>
-</div>
-</form>
-</div>
+    <div class="container" style="padding-top: 100px;padding-bottom:50px;">
+        <form>
+
+            <div class="form-group">
+                <label>Article Topic</label>
+                <input type="" class="form-control" id="title" placeholder="Enter the topic of your article">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Enter your content</label>
+                <textarea class="form-control" id="content" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Choose Event Location</label></br>
+                <input id="pac-input" class="controls" type="text" placeholder="Search Box" style="width:400px">
+                <div id="map" style="width:600px;height:300px"></div>
+            </div>
+
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
 </body>
+<script src="https://www.gstatic.com/firebasejs/5.5.6/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.6/firebase-database.js"></script>
+<script type="text/javascript" src="submit.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAK2MPVrTUt9TPf4E8cosEPVMEwGcpVEzQ&libraries=places&callback=initAutocomplete" async defer></script>
+
 </html>
